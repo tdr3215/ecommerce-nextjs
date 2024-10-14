@@ -2,7 +2,7 @@ import FormSubmitButton from "@/components/FormSubmitButton";
 import prisma from "@/lib/db/prisma";
 import { getServerSession } from "next-auth";
 import { redirect } from "next/navigation";
-import { authOptions } from "../api/auth/[...nextauth]/route";
+import { authOptions } from "../../pages/api/auth/[...nextauth]";
 
 export const metadata = { title: "Add Product - Pixazon" };
 const addProduct = async (formData: FormData) => {
