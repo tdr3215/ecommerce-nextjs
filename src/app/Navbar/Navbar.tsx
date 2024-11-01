@@ -7,7 +7,7 @@ import { getCart } from "@/lib/db/cart";
 import { ShoppingCartButton } from "./ShoppingCartButton";
 import UserMenuButton from "./UserMenuButton";
 import { getServerSession } from "next-auth";
-import { authOptions } from "../../pages/api/auth/[...nextauth]";
+import { authOptions } from "../api/auth/[...nextauth]/route";
 
 const searchProducts = async (formData: FormData) => {
   "use server";
